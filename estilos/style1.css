@@ -1,0 +1,42 @@
+*{
+    background-color:aqua ;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    
+    margin-left: 20px;
+    
+}
+a{
+    font-style: italic;
+    color: black;
+    border-style:outset;
+    border-radius: 5px;
+    border-color: red;
+    padding: 10px 10px 10px 10px ;
+}
+section{
+   display: flex;
+}
+
+article{
+    padding-top:70px;
+ 
+}
+main{
+    border-style: dotted;
+    margin-top: 50px;
+}
+section{
+    margin-top: 20px;
+    font-size: larger;
+}
+.article p{ 
+    font-size: large;
+    margin-top: 10%;
+    font-style: oblique;
+    
+}
