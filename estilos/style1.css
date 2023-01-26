@@ -14,6 +14,7 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align:center;
     margin: 5px 50px;
+    border: solid red;
 }
 
 header{
@@ -24,8 +25,10 @@ header{
     margin-top: 20px;
     background-image: url("../assets/design1_image1.jpg");
     background-position: center;
+    background-size: cover;
     width: 822px;
-    height: 540px;    
+    height: 540px;
+    
 }
 
 h1{
@@ -39,9 +42,11 @@ h1{
  img#logo{
     display: flex;
     float: right;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
  }
 
- 
 nav a,li{
     display: block;
     text-decoration: none;
@@ -50,13 +55,53 @@ nav a,li{
     font-weight: 400;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
-
+li a{
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    
+}
 #navbar{
     display: inline-block;
     margin: 50px;
 }
 #seccion{
-    margin:20px;
     padding: 25px;
     background-color: tomato;
+    position: absolute;
+    left: 200px;
+    bottom: -193px;
+    width: 1000px;
+    border: solid black;
+}
+
+footer{
+    margin: 30px;
+}
+
+#seccion2{
+    padding: 25px;
+    background-color: tomato;
+    position: relative;
+    left: 200px;
+    bottom: 180px;
+    width: 1000px;
+    margin-bottom: 0.5em;
+    border: solid black;
+}
+#seccion3{
+    padding: 25px;
+    background-color: tomato;
+    position: relative;
+    left: 200px;
+    bottom: 180px;
+    width: 1000px;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    border: solid black;
+}
+ul{
+    border: solid black;
 }
