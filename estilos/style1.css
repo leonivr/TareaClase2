@@ -8,7 +8,7 @@ body{
     background-color: aquamarine;
 }
 
-#upcoming{
+#upcoming,#about,#contact{
     background-color: black;
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,7 +28,7 @@ header{
     height: 540px;    
 }
 
-h1>p{
+h1{
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
     color:yellow;
@@ -56,8 +56,7 @@ nav a,li{
     margin: 50px;
 }
 #seccion{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin:20px;
     padding: 25px;
     background-color: tomato;
 }
