@@ -105,3 +105,6 @@ footer{
 ul{
     border: solid black;
 }
+a.active{
+    color:blue;
+}
