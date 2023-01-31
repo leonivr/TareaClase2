@@ -6,14 +6,19 @@
 
 body{
     background-color: aquamarine;
+    
 }
 
-#upcoming,#about,#contact{
+#upcoming,#about,#contact,#game_information,#rules{
     background-color: black;
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align:center;
-    margin: 5px 50px;
+    /*margin: 5px 50px;*/
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 200px;
+    margin-right: 240px;
     border: solid red;
 }
 
@@ -44,7 +49,8 @@ h1{
     float: right;
     position: absolute;
     bottom: 0px;
-    right: 50px;
+    right: 250px;
+    top: 510px;
  }
 
 nav a,li{
@@ -67,31 +73,33 @@ li a{
     display: inline-block;
     margin: 50px;
 }
-#seccion{
+/*#seccion{
     padding: 25px;
     background-color: tomato;
-    position: absolute;
-    left: 200px;
-    bottom: -193px;
-    width: 1000px;
+    position: relative;
+    left: 300px;
+    bottom: 200px;
+    width: 700px;
     border: solid black;
-}
+}*/
 
 footer{
     margin: 30px;
 }
 
-#seccion2{
+#seccion,#seccion2,#seccion3,#seccion4,#seccion5{
     padding: 25px;
-    background-color: tomato;
+    background-color: azure;
     position: relative;
-    left: 200px;
+    left: 263px;
+    top: -220px;
     bottom: 180px;
-    width: 1000px;
+    width: 760px;
     margin-bottom: 0.5em;
     border: solid black;
+    
 }
-#seccion3{
+/*#seccion3{
     padding: 25px;
     background-color: tomato;
     position: relative;
@@ -101,10 +109,55 @@ footer{
     margin-bottom: 0.5em;
     margin-top: 2em;
     border: solid black;
-}
-ul{
+}*/
+nav>ul{
     border: solid black;
 }
 a.active{
     color:blue;
+}
+
+#seccion5>section>h2{
+    text-align: center;
+}
+ol>li>p{
+    color:black;
+    font-family:'Times New Roman', Times, serif ;
+}
+ul>li>p{
+    list-style: armenian;
+    color:black;
+    font-family:'Times New Roman', Times, serif ;
+    border: 1px;
+}
+
+/*div#seccion4 p{
+    text-decoration: underline;
+}*/
+
+table{
+    background-color:steelblue;
+    padding: 10px;
+    text-indent: 30px;
+    text-align: left;
+    border: solid black;
+}
+
+tr{
+    background-color:antiquewhite;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(7, 244, 252);
+}
+td{
+    background-color:aquamarine;
+    padding: 10px;
+}
+
+#email{
+    position:relative;
+    left: 420px;
+    bottom: 15px;
 }
