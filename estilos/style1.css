@@ -1,23 +1,25 @@
 *{
-    margin: 0px;
+    margin: 0;
 	padding: 0;
     box-sizing: border-box;
 }
 
 body{
     background-color: aquamarine;
-    
+    font-family: cursive;
+    font-style:normal;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #upcoming,#about,#contact,#game_information,#rules{
     background-color: black;
+    max-width:100%;
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:cursive;
     text-align:center;
     margin-top:5px;
     margin-bottom: 5px;
-    margin-left: 200px;
-    margin-right: 240px;
     border: solid red;
     display: flex;
     flex-direction: row;
@@ -26,14 +28,13 @@ body{
 }
 
 header{
-    border-color: red;
+    border-color:black;
     border-style: solid;
-    margin-left: 200px;
     margin-top: 20px;
     background-image: url("../assets/design1_image1.jpg");
     background-position: center;
-    background-size: cover;
-    width: 822px;
+    background-size:cover;
+    max-width:100%;
     height: 540px;
     display: flex;
     flex-direction: column;
@@ -42,10 +43,8 @@ header{
 }
 
 h1{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: black;
+    font-family:cursive;
     padding-left: 15px;
-    color:yellow;
     text-decoration:double;
     font-style: oblique;
     text-align:start;
@@ -58,10 +57,10 @@ h1{
 }
  img#logo{
     display: flex;
-    float: right;
+    flex-direction: row;
     position: absolute;
     bottom: 0px;
-    right: 250px;
+    right: 60px;
     top: 510px;
  }
 
@@ -71,16 +70,9 @@ h1{
     list-style-type:none;
  }
 
-/*nav a, li{
-    display: block;
-    text-decoration: none;
-}*/
-
 li a{
-    padding: 2px 7px 2px 7px;
-    color: #666;
-    background-color: #eeeeee;
-    border: 1px solid #ccc;
+   padding: 20px 20px;
+   color: black;
 }
 
 #navbar{
@@ -96,20 +88,18 @@ footer{
     padding: 25px;
     background-color: azure;
     position: relative;
-    left: 200px;
-    top: -220px;
+    left: 250px;/*02-02*/
+    top: -400px;
     bottom: 180px;
-    width: 823px;
-    margin-bottom: 0.5em;
+    /*width: 823px;* 02-02*/
+    width: 79%;/*02*/
     border: solid black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;/*02-02*/
 }
 
-nav>ul{
-    border: solid black;
-}
 a.active{
     color:blue;
 }
@@ -164,7 +154,6 @@ dl{
 }
 .nav-ul{
     list-style: none;
-    background-color: yellowgreen;
 }
 
 dt{
@@ -201,4 +190,22 @@ nav{
 
 dt,dd{
     margin-bottom: 15px;
+}
+
+nav{/*02-02*/
+    display: block;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    position: relative;
+    top: -50px;
+    bottom:100px;
+    left: 10px;
+}
+
+#seccion,#seccion3{
+    align-items: flex-start;
+}
+ .left{
+    align-self: flex-start;/*02-02*/
 }
