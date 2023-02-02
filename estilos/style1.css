@@ -14,16 +14,18 @@ body{
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align:center;
-    /*margin: 5px 50px;*/
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 200px;
     margin-right: 240px;
     border: solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 header{
-    display: block;
     border-color: red;
     border-style: solid;
     margin-left: 200px;
@@ -33,16 +35,26 @@ header{
     background-size: cover;
     width: 822px;
     height: 540px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
 }
 
 h1{
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
+    padding-left: 15px;
     color:yellow;
     text-decoration:double;
     font-style: oblique;
-    text-align: center;
+    text-align:start;
+    position: relative;
+    bottom: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
  img#logo{
     display: flex;
@@ -53,35 +65,28 @@ h1{
     top: 510px;
  }
 
-nav a,li{
+ #navbar nav>ul>li>a{
     display: block;
     text-decoration: none;
-    color: blue;
-    font-size: large;
-    font-weight: 400;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-}
+    list-style-type:none;
+ }
+
+/*nav a, li{
+    display: block;
+    text-decoration: none;
+}*/
+
 li a{
     padding: 2px 7px 2px 7px;
     color: #666;
     background-color: #eeeeee;
     border: 1px solid #ccc;
-    text-decoration: none;
-    
 }
+
 #navbar{
     display: inline-block;
     margin: 50px;
 }
-/*#seccion{
-    padding: 25px;
-    background-color: tomato;
-    position: relative;
-    left: 300px;
-    bottom: 200px;
-    width: 700px;
-    border: solid black;
-}*/
 
 footer{
     margin: 30px;
@@ -91,25 +96,17 @@ footer{
     padding: 25px;
     background-color: azure;
     position: relative;
-    left: 263px;
+    left: 200px;
     top: -220px;
     bottom: 180px;
-    width: 760px;
+    width: 823px;
     margin-bottom: 0.5em;
     border: solid black;
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-/*#seccion3{
-    padding: 25px;
-    background-color: tomato;
-    position: relative;
-    left: 200px;
-    bottom: 180px;
-    width: 1000px;
-    margin-bottom: 0.5em;
-    margin-top: 2em;
-    border: solid black;
-}*/
+
 nav>ul{
     border: solid black;
 }
@@ -120,20 +117,6 @@ a.active{
 #seccion5>section>h2{
     text-align: center;
 }
-ol>li>p{
-    color:black;
-    font-family:'Times New Roman', Times, serif ;
-}
-ul>li>p{
-    list-style: armenian;
-    color:black;
-    font-family:'Times New Roman', Times, serif ;
-    border: 1px;
-}
-
-/*div#seccion4 p{
-    text-decoration: underline;
-}*/
 
 table{
     background-color:steelblue;
@@ -150,14 +133,72 @@ tr{
 
 th{
     background-color: rgb(7, 244, 252);
+    border: solid;
 }
+
 td{
     background-color:aquamarine;
     padding: 10px;
+    border: solid;
 }
 
 #email{
     position:relative;
     left: 420px;
     bottom: 15px;
+}
+
+dd>ol{
+    list-style: decimal;
+}
+
+ol#alfabetico{
+    list-style: lower-alpha;
+}
+
+dd>ul{
+    list-style: circle;
+}
+dl{
+    padding-left: 15px;;
+}
+.nav-ul{
+    list-style: none;
+    background-color: yellowgreen;
+}
+
+dt{
+    font-weight: bold ;
+}
+
+dd>ul>li{
+    margin-left: 35px;
+}
+
+ol#alfabetico>li{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+dd>ol>li{
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+#IHF{
+    font-size: large;
+    text-align: center;
+}
+#seccion5{
+    padding-bottom: 80px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 4vh;
+}
+
+dt,dd{
+    margin-bottom: 15px;
 }
