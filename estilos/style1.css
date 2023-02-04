@@ -84,9 +84,9 @@ footer{
     margin: 30px;
 }
 
-#seccion,#seccion2,#seccion3,#seccion4,#seccion5{
+#seccion,#seccion2,#seccion3,#seccion4,#seccion5,#seccion6{
     padding: 25px;
-    background-color: azure;
+    background-color:white;
     position: relative;
     left: 250px;/*02-02*/
     top: -400px;
@@ -208,4 +208,62 @@ nav{/*02-02*/
 }
  .left{
     align-self: flex-start;/*02-02*/
+}
+
+/*03-02-23*/
+.mapas{
+    border:solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#seccion6{
+    background-color:white;
+}
+fieldset{
+    /*background-color: antiquewhite;*/
+    border: solid black;
+    margin: 5px;
+    padding: 5px;
+}
+fieldset>div#uno,fieldset>div#tres{
+    display: inline;
+    position: relative;
+}
+fieldset>div#dos{
+    display: inline;
+    position: relative;
+    left: 200px;
+    bottom: 100px;
+}
+fieldset>div#cuatro{
+    display: block;
+    position: relative;
+    left: 100px;
+    bottom: 65px;
+}
+input{
+    margin: 10px;
+}
+fieldset>div#seis{
+    display:block;
+    display: inline;
+    position: relative;
+    left: 200px;
+    bottom: 120px;
+}
+#per{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+.signature-date{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    background-color: silver;
+}
+fieldset{
+    background-color:silver;
 }
