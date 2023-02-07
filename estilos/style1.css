@@ -76,25 +76,26 @@ li a{
 }
 
 #navbar{
-    display: inline-block;
-    margin: 50px;
+   /* display: inline-block;*/
+    margin-left: 1px;
+    margin-top: 100px;
 }
 
-footer{
+/*footer{
     margin: 30px;
-}
+}*/
 
 #seccion,#seccion2,#seccion3,#seccion4,#seccion5,#seccion6{
     padding: 25px;
     background-color:white;
     position: relative;
-    left: 250px;/*02-02*/
+    left: 200px;/*02-02*/
     top: -400px;
     bottom: 180px;
     /*width: 823px;* 02-02*/
     width: 79%;/*02*/
-    border: solid black;
-    display: flex;
+    /*border: solid black;*/
+    /*display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;/*02-02*/
@@ -110,6 +111,10 @@ a.active{
 
 table{
     background-color:steelblue;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    right: 200px;
     padding: 10px;
     text-indent: 30px;
     text-align: left;
@@ -133,9 +138,12 @@ td{
 }
 
 #email{
-    position:relative;
+    /*position:relative;*/
     left: 420px;
     bottom: 15px;
+    /*display: flex;
+    flex-direction: column;
+    align-self: flex-start;*/
 }
 
 dd>ol{
@@ -228,17 +236,17 @@ fieldset{
     padding: 5px;
 }
 fieldset>div#uno,fieldset>div#tres{
-    display: inline;
+    /*display: inline;*/
     position: relative;
 }
 fieldset>div#dos{
-    display: inline;
+    /*display: inline;*/
     position: relative;
     left: 200px;
     bottom: 100px;
 }
 fieldset>div#cuatro{
-    display: block;
+    /*display: block;*/
     position: relative;
     left: 100px;
     bottom: 65px;
@@ -247,8 +255,8 @@ input{
     margin: 10px;
 }
 fieldset>div#seis{
-    display:block;
-    display: inline;
+    /*display:block;
+    display: inline;*/
     position: relative;
     left: 200px;
     bottom: 120px;
@@ -259,11 +267,198 @@ fieldset>div#seis{
     align-self: flex-start;
 }
 .signature-date{
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     align-self: flex-start;
     background-color: silver;
 }
 fieldset{
     background-color:silver;
+}
+
+/*--------------------06-02-23----------------------*/
+@media screen and (max-width:320px){
+    img#logo{
+        display: unset;
+        position: relative;
+        top: 0;
+        left: 10px;
+    }
+    
+}
+@media only screen and (min-width:320px){
+    body{
+        margin-right: 5px;
+        background-color:wheat;;
+    }
+    nav{
+        display: flex;
+        flex-direction:column;
+        justify-self: left;
+        margin-top: -20px;
+        margin-left: 10px;
+        flex-wrap: wrap;
+        flex-basis: 300px;
+        flex-shrink: 0;
+    }
+    #seccion,#seccion2,#seccion3,#seccion4,#seccion5,#seccion6{
+        position: relative;
+        left: 4vh;
+        top: 1vh;
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        
+        max-width: 100%;
+        font-family: cursive;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        /*flex-direction: row;
+        flex-wrap: wrap;*/
+    }
+    #seccion4>h2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-self:flex-start;
+    }
+    /*footer{
+       /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:self-start;
+    }
+    footer p{
+        text-align: left;
+        flex-basis: content;
+    }*/
+    #seccion4{
+        /**/
+        background-color: tomato;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+
+/**tablets*/
+@media only screen and (min-width:768px){
+    #seccion,#seccion2,#seccion3,#seccion4,#seccion5,#seccion6{
+        /*flex-basis: 300px;*/
+        flex-shrink: 0;
+
+    }
+    #seccion,#seccion2,#seccion3,#seccion4,#seccion5,#seccion6{
+        padding: 25px;
+        background-color:white;
+        position: relative;
+        left: 200px;/*02-02*/
+        top: -450px;
+        bottom: 180px;
+        align-items:flex-start;
+        /*width: 823px;* 02-02*/
+        width: 79%;/*02*/
+        /*border: solid black;*/
+        /*display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        */
+    }
+    #seccion6{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+    #seccion4>h2{
+        margin-left: 30%;
+    }
+
+    p#ph{
+        text-align: left;
+        /*display: block;*/
+        /*position: relative;*/
+        top: 25px;
+        right: 500px;
+    }
+    #email{ 
+        display: unset;
+    }
+
+    .mapas{
+        border: solid red;
+    }
+    .mapas>iframe{
+        margin: auto;
+        
+    }
+    #email,#ph{
+        display: unset;
+    }
+    
+    h3.left{
+        
+        display: block;
+        position: relative;
+        top: 50px;
+        right: 600px;
+
+    }
+    p.left{
+        display: block;
+        position: relative;
+        top: 60px;
+        right: 5px;
+    }
+}
+
+
+/*monitores grandes*/
+
+@media only screen and (min-width:1200px){
+    #seccion,#seccion2,#seccion3,#seccion4,#seccion5,#seccion6{
+        padding: 25px;
+        background-color:white;
+        position: relative;
+        left: 200px;/*02-02*/
+        top: -450px;
+        bottom: 180px;
+        align-items:flex-start;
+        /*width: 823px;* 02-02*/
+        width: 79%;/*02*/
+        /*border: solid black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        */
+    }
+    #seccion6{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+    #seccion4>h2{
+        margin-left: 30%;
+    }
+
+    p#ph{
+        text-align: left;
+        /*display: block;*/
+        position: relative;
+        top: 25px;
+        right: 500px;
+    }
+    #email{ 
+        display: unset;
+    }
+
+    .mapas{
+        border: solid red;
+    }
+    .mapas>iframe{
+        margin: auto;
+        
+    }
 }
